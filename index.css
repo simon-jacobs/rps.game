@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    caret-color: transparent;
+}
+body {
+    font-family: "Anonymous Pro", monospace;
+    color: rgb(255, 255, 255);
+    
+}
+
+h1, h2 {
+    text-shadow: 0px 0 black, 0 1px black, 1px 0 black, 0 0px black;
+}
+
+section {
+    height: 100vh;
+    background: #2b2b2b;
+}
+
+.playerScore {
+    margin: 0 5px 0 0;
+}
+
+.computerScore {
+    margin: 0 0 0 5px ;
+}
+
+.score {
+    padding: 5% 30%;
+    margin: 0 10px 0 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score h2 {
+    font-size: 24px;
+}
+
+.score p {
+    text-align: center;
+    padding: 10px 0 0 0;
+    font-size: 32px;
+}
+
+.intro {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+    margin: 0 5px 0 5px;
+}
+
+.intro h1 {
+    font-size: 50px;
+}
+
+.intro button, .options button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    background: rgb(0, 0, 0);
+    align-items: center;
+}
+
+.intro button, .options button:hover {
+    cursor: pointer;
+}
+
+.match {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.hands, .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    gap: 30px;
+}
+
+.computerHand {
+    transform: rotateY(180deg)
+}
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.winner {
+    text-align: center;
+    animation: shake 0.5s ease 0.5s;
+}

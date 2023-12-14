@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>rock.paper.scissors</title>
+</head>
+<body>
+    <section class="game">
+        <div class="score">
+            <div class="playerScore">
+                <h2>player</h2>
+                <p>0</p>
+            </div>
+            <div class="computerScore">
+                <h2>computer</h2>
+                <p>0</p>
+            </div>
+        </div>
+        <div class="intro">
+            <h1>rock.paper.scissors</h1>
+            <button>play</button>
+        </div>
+        <div class="match fadeOut">
+            <h2 class="winner">choose an option</h2>
+            <div class="hands">
+                <img class="playerHand" src="assets/rock.png" alt="">
+                <img class="computerHand" src="assets/rock.png" alt="">
+            </div>
+            <div class="options">
+                <button class="rock">rock</button>
+                <button class="paper">paper</button>
+                <button class="scissors">scissors</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</html>
